@@ -99,18 +99,20 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  padding: 1em;
   font-size: 1.25em;
+  padding: 1em;
   height: 100%;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display:flex;
+  flex-flow: row wrap;
   font-weight: 700;
   justify-content: space-between;
   align-items: center;
@@ -120,33 +122,58 @@ body {
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   align-items: center;
-  border: #1F2813 solid 1em;
   color: #fff;
+  border: #34421E solid 1em;
   display: flex;
   line-height: 1.75em;
-  font-size: 1.25em;
+  background-color: #C19434;
+  font-size: 1em;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  background-color: #f16059;
-  height: 300px;
-  width: 30%;
-  padding: 15px;
+  height: 400px;
+  width: 32%;
+  box-sizing: border-box;
+  padding: 0 1em 0 1em;
 }
 
-/* Adding style to inidivdal divs */
+/* Header and footer */
 
-.div-1 {
-    background-color: #C5CF29;
+h1, footer {
+    justify-content: center;
+    display: flex;
+    background-color: #34421E;
+    width: 100%;
+    color:#F1F1EF;
+    align-items: center;
 }
 
-.div-2 {
-    background-color: #F2DE79;
+h1  {
+    height: 150px;
+    font-family: 'Dongle';
+    font-size: 4em;
+    text-align: left;
 }
 
-.div-3 {
-    background-color: #94AC85;
+footer {
+    margin-top: 1em;
+    height: 80px;
 }
+
+
+/* Add style to main box */
+main {
+    display: flex;
+    background-color: #F1F1EF;
+    font-size: 2em;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border: #34421E solid 1em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
 
 /* ==========================================================================
    Helper classes
